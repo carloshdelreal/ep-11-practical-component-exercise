@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Component In component Vue.js</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.2/css/bulma.css">
+  <style>
+    body{
+      padding: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <div id="root">
+    <tabs>
+      <tab name="About Us" :selected="true">
+        <h1>Here is the contet form the about us tab</h1>
+      </tab>
+      <tab name="About our Culture">
+        <h1>Here is teh content for the about our culture tab</h1>
+      </tab>
+      <tab name="Our Vision">
+        <h1>here is the history of our company</h1>
+      </tab>
+    </tabs>
+  </div>
+
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
